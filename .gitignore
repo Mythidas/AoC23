@@ -1,5 +1,9 @@
+/.vs
 *.sln
 *.opendb
 *.opensdf
 *.vcxproj
 *.vcxproj.user
+
+/bin
+/bin-int
