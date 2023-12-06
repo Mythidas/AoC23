@@ -1,4 +1,0 @@
-﻿  main.cpp
-C:\Programming\AoC23\Day1\main.cpp(76,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Programming\AoC23\Day1\main.cpp(104,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Day1.vcxproj -> C:\Programming\AoC23\bin\Debug-windows-x86_64\Day1\Day1.exe
