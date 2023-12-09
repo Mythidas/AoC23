@@ -96,6 +96,7 @@ int Part1Answer()
 }
 
 // This answer is extremely slow and there may be some optimizations that could be made since there are a lot of For Loops
+// EDIT: I resolved the speed issues pretty easily and added a note with the solution below
 int Part2Answer()
 {
 	int answer = 0;
@@ -111,21 +112,47 @@ int Part2Answer()
 		int points = 0;
 		std::vector<int> numbers = GetYourNumbers(scratcher);
 
+		//for (int i = 0; i < cardCounts[card]; i++)
+		//{
+		//	for (auto& winners : GetWinningNumbers(scratcher))
+		//	{
+		//		for (auto& number : numbers)
+		//		{
+		//			if (winners == number)
+		//			{
+		//				points += 1;
+		//				break;
+		//			}
+		//		}
+		//	}
+
+		//	while (points > 0)
+		//	{
+		//		cardCounts[card + points]++;
+		//		points--;
+		//	}
+		//}
+
+		// **This is an improved version that runs quicker by only looping over the point tallying instead of calculating the points multiple times
+
+		// We loop through winning numbers and check against ours
+		for (auto& winners : GetWinningNumbers(scratcher))
+		{
+			for (auto& number : numbers)
+			{
+				if (winners == number)
+				{
+					points += 1;
+					break;
+				}
+			}
+		}
+
+		int tempPoints = points;
 		// We need to loop through all copies of the card
 		for (int i = 0; i < cardCounts[card]; i++)
 		{
-			// We loop through winning numbers and check against ours
-			for (auto& winners : GetWinningNumbers(scratcher))
-			{
-				for (auto& number : numbers)
-				{
-					if (winners == number)
-					{
-						points += 1;
-						break;
-					}
-				}
-			}
+			points = tempPoints;
 
 			// Add copies of subsequent cards
 			while (points > 0)
