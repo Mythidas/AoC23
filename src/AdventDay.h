@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Timer.h"
+
 #include <iostream>
 
 class AdventDay

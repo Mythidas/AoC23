@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Inputs">
+      <UniqueIdentifier>{A88D2DBA-942F-5890-7DEA-6BE4692BDFE0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdventDay.h" />
+    <ClInclude Include="Day1.h" />
+    <ClInclude Include="Day2.h" />
+    <ClInclude Include="Day3.h" />
+    <ClInclude Include="Day4.h" />
+    <ClInclude Include="Day5.h" />
+    <ClInclude Include="Day6.h" />
+    <ClInclude Include="Day7.h" />
+    <ClInclude Include="Inputs\I_Day1.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs\I_Day2.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs\I_Day3.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs\I_Day4.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs\I_Day5.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs\I_Day6.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs\I_Day7.h">
+      <Filter>Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>

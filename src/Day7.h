@@ -162,9 +162,10 @@ class Day7 : public AdventDay
 public:
 	virtual void PrintAnswer() override
 	{
+		Timer timer;
 		int part1 = Part1Answer();
 		int part2 = Part2Answer();
-		std::cout << "Day7:" << std::endl;
+		std::cout << "Day7: (Time to run: " << timer.Elapsed() << ")" << std::endl;
 		std::cout << "  Part1 Answer: " << part1 << std::endl;
 		std::cout << "  Part2 Answer: " << part2 << std::endl;
 		std::cout << std::endl;
@@ -185,10 +186,10 @@ private:
 		}
 
 		// We use a quicksort algorithm to arrange the array in descending order
-		QuickSort(m_Hands, 0, m_Hands.size() - 1);
+		QuickSort(m_Hands, 0, static_cast<int>(m_Hands.size() - 1));
 
 		// We reverse iterate over the vector but it could be done the other direction by setting rank to 1 and using rank++
-		int rank = m_Hands.size();
+		int rank = static_cast<int>(m_Hands.size());
 		for (auto hand = m_Hands.crbegin(); hand != m_Hands.crend(); hand++)
 		{
 			answer += hand->Bid * rank;
@@ -210,12 +211,12 @@ private:
 		}
 
 		// We use a quicksort algorithm to arrange the array in descending order
-		QuickSort(m_Hands, 0, m_Hands.size() - 1);
+		QuickSort(m_Hands, 0, static_cast<int>(m_Hands.size() - 1));
 
 		int answer = 0;
 
 		// We reverse iterate over the vector but it could be done the other direction by setting rank to 1 and using rank++
-		int rank = m_Hands.size();
+		int rank = static_cast<int>(m_Hands.size());
 		for (auto hand = m_Hands.crbegin(); hand != m_Hands.crend(); hand++)
 		{
 			answer += hand->Bid * rank;

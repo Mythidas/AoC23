@@ -23,9 +23,12 @@ class Day1 : public AdventDay
 public:
 	virtual void PrintAnswer() override
 	{
-		std::cout << "Day1:" << std::endl;
-		std::cout << "  Part 1 Answer: " << Part1Answer() << std::endl;
-		std::cout << "  Part 2 Answer: " << Part2Answer() << std::endl;
+		Timer timer;
+		int part1 = Part1Answer();
+		int part2 = Part2Answer();
+		std::cout << "Day1: (Time to run: " << timer.Elapsed() << ")" << std::endl;
+		std::cout << "  Part 1 Answer: " << part1 << std::endl;
+		std::cout << "  Part 2 Answer: " << part2 << std::endl;
 		std::cout << std::endl;
 	}
 

@@ -8,9 +8,12 @@ class Day2 : public AdventDay
 public:
 	virtual void PrintAnswer() override
 	{
-		std::cout << "Day2:" << std::endl;
-		std::cout << "  Part1 Answer: " << Part1Answer() << std::endl;
-		std::cout << "  Part2 Answer: " << Part2Answer() << std::endl;
+		Timer timer;
+		int part1 = Part1Answer();
+		int part2 = Part2Answer();
+		std::cout << "Day2: (Time to run: " << timer.Elapsed() << ")" << std::endl;
+		std::cout << "  Part1 Answer: " << part1 << std::endl;
+		std::cout << "  Part2 Answer: " << part2 << std::endl;
 		std::cout << std::endl;
 	}
 
