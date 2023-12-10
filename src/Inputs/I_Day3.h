@@ -3,7 +3,7 @@
 #include<vector>
 #include<string>
 
-const std::vector<std::string> TestInputs=
+const std::vector<std::string> Day3_TestInputs =
 {
 "467..114..",
 "...*......",
@@ -17,7 +17,7 @@ const std::vector<std::string> TestInputs=
 ".664.598..",
 };
 
-const std::vector<std::string> Inputs=
+const std::vector<std::string> Day3_Inputs =
 {
 "...............776..............552........968..................589...26...........484..............958......186....546.........484.........",
 ".........*.........778....................*....124...................................*...............*........%..26.........................",

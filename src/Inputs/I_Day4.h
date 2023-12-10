@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-const std::vector<std::string> TestInputs =
+const std::vector<std::string> Day4_TestInputs =
 {
 "Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53",
 "Card 2 : 13 32 20 16 61 | 61 30 68 82 17 32 24 19",
@@ -13,7 +13,7 @@ const std::vector<std::string> TestInputs =
 "Card 6 : 31 18 13 56 72 | 74 77 10 23 35 67 36 11"
 };
 
-const std::vector<std::string> Inputs =
+const std::vector<std::string> Day4_Inputs =
 {
 "Card   1: 24 76 32 40 51 61 89  6 30 60 | 30 69 24 86  6  8 92 61 51 88 63 67 32 62 15 49 22 77 40 27 89 60 76 58 79",
 "Card   2 : 97  3 51 52 79  8 89 76 10 59 | 59 48 52 76 97 16 92 81 62 25 89 51 54  3 79 18 94 78  8 32 99 66 10 70 38",

@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-const std::vector<std::string> TestInputs =
+const std::vector<std::string> Day2_TestInputs =
 {
 "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green",
 "Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue",
@@ -12,7 +12,7 @@ const std::vector<std::string> TestInputs =
 "Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"
 };
 
-const std::vector<std::string> Inputs =
+const std::vector<std::string> Day2_Inputs =
 {
 "Game 1: 7 green, 4 blue, 3 red; 4 blue, 10 red, 1 green; 1 blue, 9 red",
 "Game 2: 2 red, 4 blue, 3 green; 5 green, 3 red, 1 blue; 3 green, 5 blue, 3 red",

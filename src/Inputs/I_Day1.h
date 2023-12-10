@@ -2,7 +2,7 @@
 
 #include <vector>
 
-const std::vector<const char*> TestInputs =
+const std::vector<const char*> Day1_TestInputs =
 {
 "two1nine",
 "eightwothree",
@@ -13,7 +13,7 @@ const std::vector<const char*> TestInputs =
 "7pqrstsixteen",
 };
 
-const std::vector<const char*> Inputs =
+const std::vector<const char*> Day1_Inputs =
 {
 "fouronevhnrz44",
 "eightg1",

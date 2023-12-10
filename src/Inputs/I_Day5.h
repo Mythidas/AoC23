@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-const std::vector<std::string> TestInputs =
+const std::vector<std::string> Day5_TestInputs =
 {
 "seeds: 79 14 55 13",
 "",
@@ -40,7 +40,7 @@ const std::vector<std::string> TestInputs =
 "56 93 4",
 };
 
-const std::vector<std::string> Inputs =
+const std::vector<std::string> Day5_Inputs =
 {
 "seeds: 1263068588 44436703 1116624626 2393304 2098781025 128251971 2946842531 102775703 2361566863 262106125 221434439 24088025 1368516778 69719147 3326254382 101094138 1576631370 357411492 3713929839 154258863",
 "",

@@ -1,6 +1,6 @@
 workspace "AoC23"
     architecture "x64"
-    startproject "Day1"
+    startproject "AoC23"
 
     configurations
     {
@@ -10,8 +10,17 @@ workspace "AoC23"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-include "Day1"
-include "Day2"
-include "Day3"
-include "Day4"
-include "Day5"
+project "AoC23"
+    location "src"
+    kind "ConsoleApp"
+    language "C++"
+    cppdialect "C++latest"
+
+    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+    files
+    {
+        "src/**.h",
+        "src/**.cpp",
+    }
