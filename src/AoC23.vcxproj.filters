@@ -36,6 +36,14 @@
       <Filter>Inputs</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h" />
+    <ClInclude Include="Day8.h" />
+    <ClInclude Include="Inputs\I_Day8.h" />
+    <ClInclude Include="Day9.h" />
+    <ClInclude Include="Inputs\I_Day9.h" />
+    <ClInclude Include="Day10.h" />
+    <ClInclude Include="Inputs\I_Day10.h" />
+    <ClInclude Include="Day11.h" />
+    <ClInclude Include="Inputs\I_Day11.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
